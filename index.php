@@ -6,20 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola mundo desde PHP</h1>
+    <h1>Hola mi mundo desde mi PHP</h1>
     <?php
-       //variables y tipos de datos
-       $nombre = "Juan";    
-         $edad = 30;
-        $precio = 19.99;
+       //variables-tipos de datos
+       $nombre = "Laura";    
+         $edad = 21;
+        $precio = 17.77;
         $es_estudiante = true;
         $direccion = null;
         //operaciones
-        $a= 10;
-        $b= 5;
+        $a= 15;
+        $b= 8;
         $suma = $a + $b;
         $multiplicacion = $a * $b;
-        //mostrar resultados
+        //muestra resultados
         echo"<p>hola,$nombre. Tienes $edad años.</p>";
         echo"<p>El precio es $$precio.</p>";
         echo"<p>La suma de $a y $b es $suma.</p>";
