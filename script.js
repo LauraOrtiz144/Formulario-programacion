@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Form Validation
+   
     const form = document.getElementById('form');
     
     if (form) {
