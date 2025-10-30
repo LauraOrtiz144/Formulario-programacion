@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (form) {
         form.addEventListener('submit', function(event) {
             let valid = true;
-            const name = document.getElementById('name').value.trim();
+            const nombre = document.getElementById('nombre').value.trim();
             const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('number').value.trim();
-            const message = document.getElementById('request').value.trim();
+            const numero = document.getElementById('numero').value.trim();
+            const mensaje = document.getElementById('solicitud').value.trim();
             
-            if (name === '') {
+            if (nombre === '') {
                 alert('Name is required');
                 valid = false;
             }
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 valid = false;
             }
             
-            if (phone === '') {
-                alert('Phone number is required');
+            if (numero === '') {
+                alert('Numero de telefono es solicitado');
                 valid = false;
             }
             
-            if (message === '') {
-                alert('Message is required');
+            if (mensaje === '') {
+                alert('Mensaje es solicitado');
                 valid = false;
             }
             
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // interceptar clics en enlaces con clase "ajax"
   document.body.addEventListener('click', (e) => {
     const a = e.target.closest('a.ajax');
-    if (!a) return; // no es un enlace ajax
+    if (!a) return; //no es un enlace ajax
     e.preventDefault();
 
     const page = a.getAttribute('data-page');
