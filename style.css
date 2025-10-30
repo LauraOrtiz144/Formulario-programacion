@@ -9,11 +9,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f3f7fa;
 }
 
 header {
-    background-color: darkblue;
+    background-color: #9ecdf2;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -23,7 +23,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #ddd;
+    background-color: #d9ecff;
     padding: 1rem;
 }
 
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007bff; 
+    color: #2a75bb; 
 }
 
 main {
@@ -50,12 +50,13 @@ main {
 
 
 form button:hover {
-    background-color: #0056b3; /* Hover effect for buttons */
+    background-color: #0056b3; 
+	
 }
 
 
 footer {
-    background-color:darkblue;
+    background-color:#9ecdf2e;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -65,7 +66,7 @@ form{
 	background-color: white;
 	padding: 50px 55px;
 	margin: 50px auto;
-	box-shadow:  0 0 20px rgb(0,0,0,0.2);
+	box-shadow:  0 0 20px rgb(0,0,0,0.15);
 	border-radius: 20px;
 	text-align: center;
 	width: 640px;
@@ -81,25 +82,27 @@ form{
 
 
 label{
-	color: #283629;
+	color: #3d4f68;
 	font-size: 15px;
 	font-weight: 600;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 input, textarea{
 	padding: 17px ;
 	border-radius: 25px;
 	margin-bottom: 20px;
-	background-color:darkblue;
-	border: 2px solid #F0FAF1;
-	color:white;
+	background-color:#e9f3ff;
+	border: 2px solid #c4defc;
+	color:#333;
 	outline: none;
+	font-size: 14px;
 }
 
 
-input::placeholder, textarea::placeholder{
-	color: white;
+input::placeholder,
+textarea::placeholder{
+	color: #7b98b6;
 
 }
 
@@ -108,15 +111,15 @@ input::placeholder, textarea::placeholder{
 	color: white;
 	border: 0;
 	border-radius: 25px;
-	background-color: darkblue;
-	box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+	background-color: #5aa0f2;
+	box-shadow: 0 0 20px rgba(90, 160, 242, 0.4);
 	cursor: pointer;
     font-weight:bold;
-    margin: 0 auto;		
+    padding: 10px 40px;
 }
 
 .btn:hover{
-	background-color: #50e04b;
+	background-color: #3d7cd4;
 }
 
 
