@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: darkblue;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff; 
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+form button:hover {
+    background-color: #0056b3; /* Hover effect for buttons */
+}
+
+
+footer {
+    background-color:darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+form{
+	background-color: white;
+	padding: 50px 55px;
+	margin: 50px auto;
+	box-shadow:  0 0 20px rgb(0,0,0,0.2);
+	border-radius: 20px;
+	text-align: center;
+	width: 640px;
+	
+}
+
+
+.input-group{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+
+label{
+	color: #283629;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+input, textarea{
+	padding: 17px ;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	background-color:darkblue;
+	border: 2px solid #F0FAF1;
+	color:white;
+	outline: none;
+}
+
+
+input::placeholder, textarea::placeholder{
+	color: white;
+
+}
+
+.btn{
+	font-size: 16px;
+	color: white;
+	border: 0;
+	border-radius: 25px;
+	background-color: darkblue;
+	box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+	cursor: pointer;
+    font-weight:bold;
+    margin: 0 auto;		
+}
+
+.btn:hover{
+	background-color: #50e04b;
+}
+
+
+
+
+
+
+
+

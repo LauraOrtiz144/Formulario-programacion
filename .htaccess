@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirige /enviar a php/interconexion.php
+RewriteRule ^enviar$ php/interconexion.php [L]
+
+# Opcional: redirige /formulario a form.html
+RewriteRule ^formulario$ form.html [L]
+
+# Opcional: redirige /inicio a index.html
+RewriteRule ^inicio$ index.html [L]

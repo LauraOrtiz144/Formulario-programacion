@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+    <h1>Formulario de Contacto</h1>
+    </header>
+      <nav>
+        <ul>
+            <li><a href="inicio">Inicio</a></li>
+            <li><a href="formulario">Contáctenos</a></li>
+        </ul>
+    </nav>
+    <form action="enviar" id="form"method="POST">
+        <div div class="input-group">
+            <Label for="name"> Nombre</Label>
+            <input type="text" name="name" id="name" placeholder="Nombre" >
+            <br>
+            <Label for="email"> Correo Electronico</Label>
+            <input type="email" name="email" id="email" placeholder="Correo Electronico" >
+            <br>
+            <Label for="phone"> Telefono</Label>
+            <input type="tel" name="number" id="number" placeholder="Numero Telefonico" >
+            <br>            
+            <Label for="request"> Solicitud</Label>
+            <textarea name="request" id="request" cols="30" rows="10" ></textarea>
+            <br>
+            <div>
+            <input class="btn" name="btn" type="submit" value="Enviar">
+            <input class="btn" type="reset" value="Resetear">
+            </div>    
+    </form>
+        <script src="./js/script.js"></script>
+        <script>
+document.getElementById('from').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    
+    fetch('interconexion.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Éxito:', data);
+        // Mostrar mensaje de éxito
+    });
+});
+</script>
+
+</body>
+</html>
