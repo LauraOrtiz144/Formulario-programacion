@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Contacto</title>
+    <title>Página del contacto</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-    <h1>Formulario de Contacto</h1>
+    <h1>Formulario del contacto</h1>
     </header>
       <nav>
         <ul>
             <li><a href="inicio">Inicio</a></li>
-            <li><a href="formulario">Contáctenos</a></li>
+            <li><a href="formulario">Contáctanos</a></li>
         </ul>
     </nav>
     <form action="enviar" id="form"method="POST">
@@ -26,14 +26,14 @@
             <input type="email" name="email" id="email" placeholder="Correo Electronico" >
             <br>
             <Label for="phone"> Telefono</Label>
-            <input type="tel" name="number" id="number" placeholder="Numero Telefonico" >
+            <input type="tel" name="number" id="number" placeholder="Numero Telefono" >
             <br>            
             <Label for="request"> Solicitud</Label>
             <textarea name="request" id="request" cols="30" rows="10" ></textarea>
             <br>
             <div>
             <input class="btn" name="btn" type="submit" value="Enviar">
-            <input class="btn" type="reset" value="Resetear">
+            <input class="btn" type="reset" value="Restaurar">
             </div>    
     </form>
         <script src="./js/script.js"></script>
@@ -50,7 +50,7 @@ document.getElementById('from').addEventListener('submit', function(e) {
     .then(response => response.json())
     .then(data => {
         console.log('Éxito:', data);
-        // Mostrar mensaje de éxito
+        // mensaje de validacion
     });
 });
 </script>
