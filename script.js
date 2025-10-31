@@ -11,33 +11,32 @@ document.addEventListener('DOMContentLoaded', function() {
             const mensaje = document.getElementById('solicitud').value.trim();
             
             if (nombre === '') {
-                alert('Name is required');
+                alert('Por favor, escribe tu nombre.');
                 valid = false;
             }
             
             if (email === '') {
-                alert('Email is required');
+                alert('El correo electrónico es obligatorio.');
                 valid = false;
             } else if (!validateEmail(email)) {
-                alert('Invalid email format');
+                alert('El formato del correo no es válido.');
                 valid = false;
             }
             
             if (numero === '') {
-                alert('Numero de telefono es solicitado');
+                alert('Por favor, escribe tu número de teléfono.');
                 valid = false;
             }
             
             if (mensaje === '') {
-                alert('Mensaje es solicitado');
+                alert('Por favor, escribe tu mensaje.');
                 valid = false;
             }
             
             if (!valid) {
-                event.preventDefault();  // Prevent form submission if invalid
+                event.preventDefault(); 
             } else {
-                alert('Form submitted successfully!');  // Optional confirmation message
-            }
+                alert('Formulario enviado correctamente!');  
         });
         
         function validateEmail(email) {
